@@ -1,0 +1,43 @@
+<html>
+<head>
+<SCRIPT Language ="JavaScript">
+function anagram() 
+{
+fname = document.f1.t1.value
+fname = fname.toLowerCase()
+
+aryText = new Array(fname.length)
+len = aryText.length
+
+for (i = 0; i < len; i++)
+ {
+aryText[i] = fname.charAt(i)
+}
+
+newnumber = ""
+temp = ""
+i = 0
+
+for (i = 1; i < len; i++)
+ {
+newnumber = (Math.random() * len)
+newnumber = parseInt(newnumber, 10)
+temp = aryText[i]
+aryText[i] = aryText[newnumber]
+aryText[newnumber] = temp
+}
+
+NewName = ""
+NewName = aryText.join("")
+
+document.f1.t1.value = NewName
+}
+
+</SCRIPT>
+</head>
+<body>
+<form name=f1 >
+Name:<input type=text name=t1><br>
+<input type=button value="Anagram generator" onclick="anagram()">
+</body>
+</html>

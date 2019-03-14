@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<script language="javascript">
+function callfn()
+{
+  var b = f1.t1.value;
+  var ch=parseInt(f1.d1.value);
+  switch(ch)
+  {
+     case 0 :
+         var ct=prompt("Enter the text to be concatenated");
+         var c=b.concat(" " + ct);
+         f1.t2.value=c;
+         break;
+     case 1:
+         var l=b.toLowerCase();
+         f1.t2.value=l;
+         break;
+     case 2:
+         var l=b.toUpperCase();
+         f1.t2.value=l;
+         break;
+     case 3:
+         var l=b.substring(0,2);
+	f1.t2.value=l;
+         break;
+  }
+}
+function cl()
+{
+  f1.t1.value="";
+  f1.t2.value="";
+  f1.d1.value=-1;
+}
+</script>
+</head>
+<body>
+<form name="f1">
+Enter the text : <input type="text" name="t1" ><br>
+Select a string operation : <select name="d1" onchange="callfn()">
+<option value="-1" >Select</option>
+<option value="0">concatenate</option>
+<option value="1">Lowercase</option>
+<option value="2">Uppercase</option>
+<option value="3">Substring</option>
+</select><br>
+Resultant Text is : <input type="text" name="t2"><br>
+<input type="button" value="clear" onclick="cl()">
+</form>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm() {
+    var x = document.myForm.fname.value;
+var y = document.getElementById("12").value;
+    if (x == null || x == "")
+ {
+        alert("Name must be filled out");
+        return false;
+    }
+  else if (y == null || y == "")
+ {
+        alert("Afe must be filled out");
+        return false;
+    }
+else
+document.write(x);
+}
+</script>
+</head>
+<body>
+
+<form name="myForm" action=""
+onsubmit="return validateForm()" method="post">
+Name: <input type="text" name="fname">
+Age: <input type="text" name="age" id="12">
+<input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

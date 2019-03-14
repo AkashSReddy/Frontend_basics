@@ -1,0 +1,15 @@
+<html> <body>
+<form id="form1" action="">
+First name: <input type="text" name="fname" value="Mahatma">
+<br>
+Last name: <input type="text" name="lname" value="Gandhiji"><br>
+<input type="button" value="Submit" name="Submit">
+</form>
+
+<script type="text/javascript">
+var x=document.getElementById("form1");
+for (var i=0;i<x.length;i++)
+{
+document.write(x.elements[i].name+":"+x.elements[i].value +"<br>");
+} 
+</script> </body> </html>

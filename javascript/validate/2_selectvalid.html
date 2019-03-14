@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>List Box Test</TITLE>
+<SCRIPT LANGUAGE="JavaScript">
+function testSelect()
+ {
+var x=myform.list.selectedIndex;
+if(x==-1)
+{
+alert("select an option");
+}
+else
+{
+    alert (myform.list.selectedIndex);
+    alert(myform.list.value);
+}
+}
+</SCRIPT>
+</HEAD>
+<BODY>
+<FORM NAME="myform" ACTION="" METHOD="GET">
+<INPUT TYPE="button" NAME="button" Value="Test" onClick="testSelect()">
+<SELECT NAME="list">
+<OPTION value="A">ONE
+<OPTION value="B">TWO
+<OPTION value="C">THREE
+</SELECT>
+</FORM>
+</BODY>
+</HTML>

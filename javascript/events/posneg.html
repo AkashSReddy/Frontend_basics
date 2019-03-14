@@ -1,0 +1,27 @@
+<html>
+<body>
+<h1 id="hid" align="center"></h1>
+<script language = "javascript">
+function check()
+{
+//  var n=document.forms["f1"]["t1"].value;
+var n=document.f1.t1.value;
+  if(n=="")
+    alert("U didn't enter the number");
+  else if(n%2==0)
+    alert("It's an even number");
+  else
+    alert("It's an odd number");
+}
+         
+</script>
+
+<h1 align="center"> ODD OR EVEN </h1>
+<br>
+<form name="f1" onsubmit="check()">
+Enter a number : <input type="text" name="t1">
+<br>
+<center> <input type="submit"  value="submit">
+</form>
+</body>
+</html>

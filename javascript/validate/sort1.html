@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo">Click the button to sort the array.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction()
+{
+var points = [40,100,1,5,25,10];
+points.sort(function(a,b){return a-b});
+var x=document.getElementById("demo");
+x.innerHTML=points;
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,26 @@
+<html>
+<head>
+<title>Event Handling </title>
+<script language="javascript">
+
+function mouseover()
+{
+  document.img1.src="circus-tent.gif";
+}
+
+
+function mouseout()
+{
+  document.img1.src="clouds.jpg";
+}
+
+</script>
+
+</head>
+
+<body>
+<h1 align="center">Illustration of Events Using Images</h1>
+<img src="java.jpg" name="img1" onmouseover="mouseover()"
+ onmouseout="mouseout()">
+</body>
+</html>

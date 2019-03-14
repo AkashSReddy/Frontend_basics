@@ -1,0 +1,44 @@
+<html>
+<head>
+ <title> Event Handling </title>
+</head>
+<script language="javascript">
+
+function callclick()
+{
+
+//alert("This is an example for event handling");
+document.body.style.background="red";
+}
+
+
+function callmouseover()
+{
+document.getElementById("demo").text="blue";
+
+}
+
+
+function callmouseout()
+{
+document.getElementById("demo").text="green";
+}
+
+
+function callload()
+{
+document.getElementById("demo").text="yellow";
+}
+
+
+</script>
+</html>
+<body bgcolor="pink" onload="callload()" id="demo" name="b1">
+<h1 align="center"> Illustration of Event Handling </h1>
+<br>
+<br>
+<form name="f1">
+<input type="button" value="Click Here!" onclick="callclick()" onMouseOver="callmouseover()" onmouseout="callmouseout()">
+</form>
+</body>
+</html>
